@@ -1,0 +1,22 @@
+def babble_sort(s,n):
+    for k in range(n-1):
+        for i in range(n-k-1):
+            if s[i][0]*s[i+1][1] < s[i+1][0]*s[i][1]:
+                tmp = s[i]
+                s[i] = s[i+1]
+                s[i+1] = tmp
+    return s
+n = int(input())
+s= list()
+for i in range(n):
+    a, b = map(int, input().split())
+    s.append([a,a+b])
+
+for i in range(n):
+    s[i].append(i) 
+print(s)
+babble_sort(s,n)
+for i in range(n):
+    print(s[i])
+for i in range(n):
+    print(s[i][2]+1, end=' ')

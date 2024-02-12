@@ -1,0 +1,6 @@
+n = int(input())
+a = list(map(int,input().split()))
+a.sort()
+del a[:n]
+del a[-n:]
+print(sum(a)/len(a))
