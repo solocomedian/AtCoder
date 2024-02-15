@@ -9,7 +9,7 @@ AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Left
 
 # 連続する行の位置を揃える
-AlignConsecutiveAssignments: true   # "="
+AlignConsecutiveAssignments: false   # "="
 AlignConsecutiveDeclarations: true  # 宣言
 AlignConsecutiveMacros: true        # マクロ
 AlignTrailingComments: true         # コメント
